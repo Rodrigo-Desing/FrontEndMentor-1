@@ -25,7 +25,7 @@ figure{
 
 /*             Reutilizables           */
 .btn{
-	padding: 10px 20px;
+	padding: 15px 30px;
 	border: none;
 	border-radius: 30px;
 	color: #fff;
@@ -76,10 +76,53 @@ figure{
 }
 .welcome__title{
 	font-size: 40px;
-	color: var(--Dark_Blue)
+	color: var(--Dark_Blue);
 }
 .welcome__parrafo{
 	color: var(--Dark_Grayish_Blue);
 }
 
 /*              Section Welcome            */
+
+/*              Section Services            */
+.services{
+	display: flex;
+}
+.services__box-text,
+.services-points{
+	width: 100%;
+}
+.services__title{
+	text-align: justify-all;
+	font-size: 40px;
+	color: var(--Dark_Blue);
+	padding-right: 20px;
+}
+.services__parrafo{
+	text-align: justify;
+	padding-right: 40px;
+	color: var(--Dark_Grayish_Blue);
+	line-height: 30px;
+}
+.services-points-box{
+	display: flex;
+	align-items: flex-start;
+}
+.services-points__number-point{
+	margin-top: 32px;
+	margin-right: 20px;
+	padding: 10px 20px;
+	background:  var(--Bright_Red);
+	border-radius: 30px;
+	color: #fff;
+}
+.services-points__title{
+	margin-top: 32px;
+	color: var(--Dark_Blue);
+}
+.services-points__text{
+	color: var(--Dark_Grayish_Blue);
+	text-align: justify;
+	line-height: 30px;
+}
+/*              Section Services            */
