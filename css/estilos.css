@@ -2,17 +2,22 @@
 	--Bright_Red: hsl(12, 88%, 59%);
 	--Dark_Blue: hsl(228, 39%, 23%);
 
-	--Dark_Grayish Blue: hsl(227, 12%, 61%);
-	--Very_Dark Blue: hsl(233, 12%, 13%);
-	--Very_Pale Red: hsl(13, 100%, 96%);
-	--Vary_Light Gray: hsl(0, 0%, 98%);
+	--Dark_Grayish_Blue: hsl(227, 12%, 61%);
+	--Very_Dark_Blue: hsl(233, 12%, 13%);
+	--Very_Pale_Red: hsl(13, 100%, 96%);
+	--Vary_Light_Gray: hsl(0, 0%, 98%);
 }
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
 body{
 	font-family: Be Vietnam, sans-serif;
 }	
+figure{
+	margin: 0;
+}
 .wrapper{
 	width: 90%;
 	margin: auto;
@@ -42,9 +47,6 @@ body{
 
 	height: 80px;
 }
-.hero-box-img{
-	margin: 0;
-}
 .hero__img{
 	margin-top: 10px;
 	width: 100%;
@@ -58,7 +60,26 @@ body{
 	font-weight: normal;
 }
 .main-menu__link:hover{
-	color: #868282;
+	color: var(--Dark_Grayish_Blue);
 }
 
 /*              Header            */
+
+/*              Section Welcome            */
+.welcome{
+	display: flex;
+	align-items: center;
+}
+.welcome__box-text,
+.welcome__box-img{
+	width: 50%;
+}
+.welcome__title{
+	font-size: 40px;
+	color: var(--Dark_Blue)
+}
+.welcome__parrafo{
+	color: var(--Dark_Grayish_Blue);
+}
+
+/*              Section Welcome            */
