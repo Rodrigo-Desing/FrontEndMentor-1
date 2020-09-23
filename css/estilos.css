@@ -14,6 +14,8 @@
 
 body{
 	font-family: Be Vietnam, sans-serif;
+	background: url(../img/bg3.svg);
+	background-position: right;
 }	
 figure{
 	margin: 0;
@@ -126,3 +128,53 @@ figure{
 	line-height: 30px;
 }
 /*              Section Services            */
+
+
+/*              Section Experiences            */
+.experiences{
+	margin: 100px 0;
+}
+.experiences-box-cards{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.experiences__title{
+	text-align: center;
+	color: var(--Dark_Blue);
+	font-size: 40px;
+	margin-bottom: 100px;
+}
+.experiences__card{
+	width: 45%;
+	background: var(--Vary_Light_Gray);
+	border-radius: 7px;
+	padding: 20px;
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	margin-bottom: 60px;
+}
+.experiences__card-img{
+	width: 80px;
+	position: absolute;
+	top:-40px;
+	object-fit: cover;
+}
+.experiences__card-title{
+	text-align: center;
+	margin-top: 40px;
+	color: var(--Dark_Blue);
+}
+.experiences__card-text{
+	text-align: justify-all;
+	color: var(--Dark_Grayish_Blue);
+}
+.experiences__btn{
+	display: block;
+	margin: auto;
+}
+/*              Section Experiences            */
