@@ -6,12 +6,8 @@
 	--Very_Dark_Blue: hsl(233, 12%, 13%);
 	--Very_Pale_Red: hsl(13, 100%, 96%);
 	--Vary_Light_Gray: hsl(0, 0%, 98%);
+	--logo :#242D52;
 }
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
-
-
 body{
 	font-family: Be Vietnam, sans-serif;
 	background: url(../img/bg3.svg);
@@ -24,7 +20,6 @@ figure{
 	width: 90%;
 	margin: auto;
 }
-
 /*             Reutilizables           */
 .btn{
 	padding: 15px 30px;
@@ -35,6 +30,7 @@ figure{
 	font-weight: bolder;
 	font-size: 14px;
 	background:  var(--Bright_Red);
+	transition: all ease .5s;
 }
 .btn:hover{
 	box-shadow: 0px 0px 5px 0px  hsl(12, 88%, 59%);
@@ -146,6 +142,7 @@ figure{
 	margin-bottom: 100px;
 }
 .experiences__card{
+	max-width: 550px;
 	width: 45%;
 	background: var(--Vary_Light_Gray);
 	border-radius: 7px;
@@ -178,3 +175,200 @@ figure{
 	margin: auto;
 }
 /*              Section Experiences            */
+
+
+/*              Publicidad            */
+.publicidad{
+	background: var(--Bright_Red);
+	padding: 30px 0;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.publicidad__text{
+	text-align: justify-all;
+	color: #fff;
+	font-size: 40px;
+	width: 50%;
+}
+.publicidad__btn{
+	background: var(--Vary_Light_Gray);
+	color: var(--Bright_Red);
+}
+.publicidad__btn:hover{
+	box-shadow: 0px 0px 10px 0px var(--Vary_Light_Gray);
+}
+
+/*              Publicidad            */
+
+/*              FOOTER            */
+footer{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+	padding: 50px 0;
+	background: var(--Dark_Blue);
+}
+.footer-box-enlaces{
+	display: flex;
+}
+.footer-enlaces{
+	margin-right: 40px;
+}
+.footer-social{
+	display: flex;
+	flex-direction: column;
+}
+.footer-social__icon{
+	margin-left: 5px;
+}
+.footer-social__box-img{
+	margin-bottom: 80px;
+}
+.footer-social__icon:hover{
+	color: var(--Bright_Red);
+}
+.footer-enlaces-2{
+	margin-bottom: 30px;
+}
+.footer-enlaces__link{
+	display: block;
+	margin-bottom: 15px;
+	color: #fff;
+	font-weight: normal;
+	text-decoration: none;
+	transition: all ease .5s;
+}
+.footer-enlaces__link:hover{
+	color: var(--Bright_Red);
+}
+.footer__form-input{
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 30px;
+	border:2px solid transparent;
+	transition: all ease .5s;
+	color: gray;
+	font-size: 14px;
+}
+.footer__form-input:focus{
+	border: 2px solid var(--Bright_Red);
+}
+.footer__form-btn{
+	margin-left: 10px;
+	font-size: 14px;
+}
+.footer__form-text{
+	margin-top: 70px;
+	color: var(--Dark_Grayish_Blue);
+	font-size: 14px;
+	text-align: center;
+}
+/*              FOOTER            */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
