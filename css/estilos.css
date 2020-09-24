@@ -405,6 +405,7 @@ footer{
 	}
 	.experiences__card{
 		width: 90%;
+		margin-bottom: 10px;
 	}
 	.experiences__card-title{
 		font-size: 20px;
@@ -420,8 +421,38 @@ footer{
 	.footer__form-input{
 		padding: 7px 10px;
 	}
-}
 
+	/*           Slider            */
+
+	.experiences__card{
+		display: none;
+	}
+	.experiences__card--open{
+		display: flex;
+	}
+	.counts{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 50px;
+	}
+	.count{
+		width: 10px;
+		height: 10px;
+		border: 2px solid var(--Bright_Red);
+		margin-bottom: 10px;
+		cursor: pointer;
+		margin-left: 10px;
+	}
+	.count--active{
+		background: var(--Bright_Red);
+	}
+
+
+	/*           Slider           */
+
+
+}
 @media screen and (max-width: 360px) {
 	.btn{
 		padding: 12px 20px;
@@ -440,12 +471,6 @@ footer{
 	}
 }
 /*             Media Queris         */
-
-
-
-
-
-
 
 
 

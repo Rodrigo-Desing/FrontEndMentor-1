@@ -30,3 +30,53 @@ function activeNav() {
 }
 activeNav();
 menuResponsive();
+
+
+function slider() {
+	let cards = document.querySelectorAll('.experiences__card'),
+		counts =  document.querySelector('.counts'),
+		count, text,firstCount = true;	
+
+	
+
+	cards.forEach((element,index) =>{
+		if (firstCount) {
+			text = ` <div class="count count--active" id="${index}"> </div>`;
+			counts.innerHTML += text;
+			firstCount = false;
+		}else{
+			text = ` <div class="count" id="${index}"> </div>`;	
+			counts.innerHTML += text;
+		}
+		count = document.querySelectorAll('.count');
+	})	
+
+	count.forEach( element =>{
+
+		element.addEventListener('click', event =>{
+
+			cards.forEach( card =>{
+				card.classList.remove('experiences__card--open');
+			})
+			let index2;
+
+			count.forEach( e=>{
+				e.classList.remove('count--active');
+			})
+
+			cards.forEach( (element,index) =>{
+				index2 = new String(index);
+				if (event.target.id == index2) {
+					element.classList.add('experiences__card--open');
+					event.target.classList.add('count--active');
+				}
+
+
+			})
+
+		})
+	})
+
+
+}
+slider();
