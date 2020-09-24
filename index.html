@@ -4,183 +4,187 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.google.com/specimen/Be+Vietnam">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/estilos.css"> 
   <link rel="shortcut icon" href="img/favicon-32x34.svg">
   <title>Frontend Mentor | Manage landing page</title>
 </head>
 <body>
-  <div class="wrapper">
-    <header class="hero">
-      <figure class="hero-box-img">
-         <img src="img/logo.svg" alt="" class="hero__img">
-      </figure>
-      <nav class="main-menu">
-        <a href="" class="main-menu__link">Pricing</a>
-        <a href="" class="main-menu__link">Product</a>
-        <a href="" class="main-menu__link">About Us</a>
-        <a href="" class="main-menu__link">Careers</a>
-        <a href="" class="main-menu__link">Community</a>     
-      </nav>
-      <button class="btn hero__btn">Get Started</button>
-    </header>
-    <main>
-      <section class="welcome">
-        <article class="welcome__box-text">
-          <h1 class="welcome__title">Bring everyone together to build better products.</h1>
-          <p class="welcome__parrafo">  
-              Manage makes it simple for software teams to plan day-to-day 
-              tasks while keeping the larger team goals in view.
-          </p>
-          <button class="btn welcome__btn">Get Started</button>
-        </article>
-        <figure class="welcome__box-img">
-          <img src="img/illustration-intro.svg" alt="" class="welcome__img">
+  <div class="container">
+    <div class="wrapper">
+      <header class="hero">
+        <figure class="hero-box-img">
+           <img src="img/logo.svg" alt="" class="hero__img">
         </figure>
-      </section>
-      <section class="services">
-        <article class="services__box-text">
-            <h2 class="services__title">What’s different about Manage?</h2>  
-            <p class="services__parrafo">
-              Manage provides all the functionality your team needs, without 
-              the complexity. Our software is tailor-made for modern digital 
-              product teams. 
+        <nav class="main-menu">
+          <a href="#" class="main-menu__link main-menu__link--active">Pricing</a>
+          <a href="#" class="main-menu__link">Product</a>
+          <a href="#" class="main-menu__link">About Us</a>
+          <a href="#" class="main-menu__link">Careers</a>
+          <a href="#" class="main-menu__link">Community</a>     
+        </nav>
+        <button class="btn hero__btn">Get Started</button>
+        <div class="menu-bar">
+          <img src="img/icon-hamburger.svg" alt="" class="menu-bar__icon">
+        </div>
+      </header>
+      <main>
+        <section class="welcome">
+          <article class="welcome__box-text">
+            <h1 class="welcome__title">Bring everyone together to build better products.</h1>
+            <p class="welcome__parrafo">  
+                Manage makes it simple for software teams to plan day-to-day 
+                tasks while keeping the larger team goals in view.
             </p>
-        </article>
-        <article class="services-points">
-          <div class="services-points-box">
-              <span class="services-points__number-point">01</span>
-              <div>
-                <h2 class="services-points__title">Track company-wide progress
-                </h2>
-                <p class="services-points__text">
-                  See how your day-to-day tasks fit into the wider vision. Go from 
-                  tracking progress at the milestone level all the way done to the 
-                  smallest of details. Never lose sight of the bigger picture again.
-                </p>
-              </div>
-          </div>
-          <div class="services-points-box">
-              <span class="services-points__number-point">02</span>
-              <div>
-                <h2 class="services-points__title">
-                  Advanced built-in reports
-                </h2>
-                <p class="services-points__text">
-                  Set internal delivery estimates and track progress toward company 
-                  goals. Our customisable dashboard helps you build out the reports 
-                  you need to keep key stakeholders informed.
-                </p>
-              </div>
-          </div>
-          <div class="services-points-box">
-              <span class="services-points__number-point">03</span>
-              <div>
-                <h2 class="services-points__title">
-                  Everything you need in one place
-                </h2>
-                <p class="services-points__text">
-                  Stop jumping from one service to another to communicate, store files, 
-                  track tasks and share documents. Manage offers an all-in-one team 
-                  productivity solution.
-                </p>
-              </div>
-          </div>
-        </article>
-      </section>     
-      <section class="experiences">
-        <h2 class="experiences__title">
-           What they’ve said
+            <button class="btn welcome__btn">Get Started</button>
+          </article>
+          <figure class="welcome__box-img">
+            <img src="img/illustration-intro.svg" alt="" class="welcome__img">
+          </figure>
+        </section>
+        <section class="services">
+          <article class="services__box-text">
+              <h2 class="services__title">What’s different about Manage?</h2>  
+              <p class="services__parrafo">
+                Manage provides all the functionality your team needs, without 
+                the complexity. Our software is tailor-made for modern digital 
+                product teams. 
+              </p>
+          </article>
+          <article class="services-points">
+            <div class="services-points-box">
+                <span class="services-points__number-point">01</span>
+                <div>
+                  <h2 class="services-points__title">Track company-wide progress
+                  </h2>
+                  <p class="services-points__text">
+                    See how your day-to-day tasks fit into the wider vision. Go from 
+                    tracking progress at the milestone level all the way done to the 
+                    smallest of details. Never lose sight of the bigger picture again.
+                  </p>
+                </div>
+            </div>
+            <div class="services-points-box">
+                <span class="services-points__number-point">02</span>
+                <div>
+                  <h2 class="services-points__title">
+                    Advanced built-in reports
+                  </h2>
+                  <p class="services-points__text">
+                    Set internal delivery estimates and track progress toward company 
+                    goals. Our customisable dashboard helps you build out the reports 
+                    you need to keep key stakeholders informed.
+                  </p>
+                </div>
+            </div>
+            <div class="services-points-box">
+                <span class="services-points__number-point">03</span>
+                <div>
+                  <h2 class="services-points__title">
+                    Everything you need in one place
+                  </h2>
+                  <p class="services-points__text">
+                    Stop jumping from one service to another to communicate, store files, 
+                    track tasks and share documents. Manage offers an all-in-one team 
+                    productivity solution.
+                  </p>
+                </div>
+            </div>
+          </article>
+        </section>     
+        <section class="experiences">
+          <h2 class="experiences__title">
+             What they’ve said
+          </h2>
+          <article class="experiences-box-cards">
+            <div class="experiences__card">
+              <img src="img/avatar-anisha.png" alt="" class="experiences__card-img">
+              <h2 class="experiences__card-title">
+                Anisha Li
+              </h2>
+              <p class="experiences__card-text">    
+                “Manage has supercharged our team’s workflow. The ability to maintain 
+                visibility on larger milestones at all times keeps everyone motivated.”
+              </p>
+            </div>
+            <div class="experiences__card">
+              <img src="img/avatar-ali.png" alt="" class="experiences__card-img">
+              <h2 class="experiences__card-title">
+                  Ali Bravo
+              </h2>
+              <p class="experiences__card-text">    
+                “We have been able to cancel so many other subscriptionssince using 
+                Manage. There is no more cross-channel confusion and everyone is much 
+                more focused.”
+              </p>
+            </div>
+            <div class="experiences__card">
+              <img src="img/avatar-richard.png" alt="" class="experiences__card-img">
+              <h2 class="experiences__card-title">
+                 Richard Watts
+              </h2>
+              <p class="experiences__card-text">    
+                “Manage allows us to provide structure and process. It keeps us organized 
+                and focused. I can’t stop recommending them to everyone I talk to!”
+              </p>
+            </div>
+            <div class="experiences__card">
+              <img src="img/avatar-shanai.png" alt="" class="experiences__card-img">
+              <h2 class="experiences__card-title">
+                  Shanai Gough 
+              </h2>
+              <p class="experiences__card-text">    
+                “Their software allows us to track, manage and collaborate on our
+                projects  from anywhere. It keeps the whole team in-sync without being
+                intrusive.”
+              </p>
+            </div>
+          </article>
+          <button class="btn experiences__btn">Get Started</button>
+        </section>
+      </main>
+      </div>
+      <section class="publicidad">
+        <h2 class="publicidad__text">
+           Simplify how your team works today.
         </h2>
-        <article class="experiences-box-cards">
-          <div class="experiences__card">
-            <img src="img/avatar-anisha.png" alt="" class="experiences__card-img">
-            <h2 class="experiences__card-title">
-              Anisha Li
-            </h2>
-            <p class="experiences__card-text">    
-              “Manage has supercharged our team’s workflow. The ability to maintain 
-              visibility on larger milestones at all times keeps everyone motivated.”
-            </p>
-          </div>
-          <div class="experiences__card">
-            <img src="img/avatar-ali.png" alt="" class="experiences__card-img">
-            <h2 class="experiences__card-title">
-                Ali Bravo
-            </h2>
-            <p class="experiences__card-text">    
-              “We have been able to cancel so many other subscriptionssince using 
-              Manage. There is no more cross-channel confusion and everyone is much 
-              more focused.”
-            </p>
-          </div>
-          <div class="experiences__card">
-            <img src="img/avatar-richard.png" alt="" class="experiences__card-img">
-            <h2 class="experiences__card-title">
-               Richard Watts
-            </h2>
-            <p class="experiences__card-text">    
-              “Manage allows us to provide structure and process. It keeps us organized 
-              and focused. I can’t stop recommending them to everyone I talk to!”
-            </p>
-          </div>
-          <div class="experiences__card">
-            <img src="img/avatar-shanai.png" alt="" class="experiences__card-img">
-            <h2 class="experiences__card-title">
-                Shanai Gough 
-            </h2>
-            <p class="experiences__card-text">    
-              “Their software allows us to track, manage and collaborate on our
-              projects  from anywhere. It keeps the whole team in-sync without being
-              intrusive.”
-            </p>
-          </div>
-        </article>
-        <button class="btn experiences__btn">Get Started</button>
+        <button class="btn publicidad__btn">Get Started</button>
       </section>
-    </main>
-    </div>
-    <section class="publicidad">
-      <h2 class="publicidad__text">
-         Simplify how your team works today.
-      </h2>
-      <button class="btn publicidad__btn">Get Started</button>
-    </section>
-    <footer>
-      <div class="footer-social">
-        <figure class="footer-social__box-img">
-          <img src="img/logo-2.svg" alt=" " class="footer__img">
-        </figure>
-        <div class="footer-social__box-icons">
-          <img src="img/icon-facebook.svg" alt="" class="footer-social__icon">
-          <img src="img/icon-youtube.svg" alt="" class="footer-social__icon">
-          <img src="img/icon-twitter.svg" alt="" class="footer-social__icon">
-          <img src="img/icon-pinterest.svg" alt="" class="footer-social__icon">
-          <img src="img/icon-instagram.svg" alt="" class="footer-social__icon">
+      <footer>
+        <div class="footer-social">
+          <figure class="footer-social__box-img">
+            <img src="img/logo-2.svg" alt=" " class="footer__img">
+          </figure>
+          <div class="footer-social__box-icons">
+            <img src="img/icon-facebook.svg" alt="" class="footer-social__icon">
+            <img src="img/icon-youtube.svg" alt="" class="footer-social__icon">
+            <img src="img/icon-twitter.svg" alt="" class="footer-social__icon">
+            <img src="img/icon-pinterest.svg" alt="" class="footer-social__icon">
+            <img src="img/icon-instagram.svg" alt="" class="footer-social__icon">
+          </div>
         </div>
-      </div>
-      <div class="footer-box-enlaces"> 
-        <div class="footer-enlaces">
-          <a href="#" class="footer-enlaces__link">Home</a>
-          <a href="#" class="footer-enlaces__link">Pricing</a>
-          <a href="#" class="footer-enlaces__link">Products</a>
-          <a href="#" class="footer-enlaces__link">About Us</a>
+        <div class="footer-box-enlaces"> 
+          <div class="footer-enlaces">
+            <a href="#" class="footer-enlaces__link">Home</a>
+            <a href="#" class="footer-enlaces__link">Pricing</a>
+            <a href="#" class="footer-enlaces__link">Products</a>
+            <a href="#" class="footer-enlaces__link">About Us</a>
+          </div>
+            <div class="footer-enlaces-2">
+            <a href="#" class="footer-enlaces__link">Careers</a>
+            <a href="#" class="footer-enlaces__link">Community</a>
+            <a href="#" class="footer-enlaces__link">Privacy Policy</a>
+          </div>
         </div>
-          <div class="footer-enlaces-2">
-          <a href="#" class="footer-enlaces__link">Careers</a>
-          <a href="#" class="footer-enlaces__link">Community</a>
-          <a href="#" class="footer-enlaces__link">Privacy Policy</a>
-        </div>
-      </div>
-      <form class="footer__form">
-        <div>
-          <input class="footer__form-input" required placeholder="Updates in your inbox…">
-          <button class="btn footer__form-btn">Go</button>
-        </div>
-        <p class="footer__form-text">Copyright 2020. All Rights Reserved</p>
-      </form>
-    </footer>
+        <form class="footer__form">
+          <div>
+            <input class="footer__form-input" required placeholder="Updates in your inbox…">
+            <button class="btn footer__form-btn">Go</button>
+          </div>
+          <p class="footer__form-text">Copyright 2020. All Rights Reserved</p>
+        </form>
+      </footer>
+  </div>
 
   <!--   <div class="attribution"> Challenge by <a
   href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend

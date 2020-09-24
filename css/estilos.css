@@ -11,14 +11,19 @@
 body{
 	font-family: Be Vietnam, sans-serif;
 	background: url(../img/bg3.svg);
-	background-position: right;
+	background-position: top;
+	background-repeat: no-repeat;
 }	
 figure{
 	margin: 0;
 }
+.container{
+	overflow: hidden;
+}
 .wrapper{
 	width: 90%;
 	margin: auto;
+
 }
 /*             Reutilizables           */
 .btn{
@@ -57,10 +62,17 @@ figure{
 	padding: 10px;
 	font-weight: normal;
 }
+.main-menu__link--active{
+	color: var(--Dark_Grayish_Blue);
+}
 .main-menu__link:hover{
 	color: var(--Dark_Grayish_Blue);
 }
-
+.menu-bar{
+	display: none;
+	cursor: pointer;
+	transition: all ease 1s;
+}
 /*              Header            */
 
 /*              Section Welcome            */
@@ -78,6 +90,12 @@ figure{
 }
 .welcome__parrafo{
 	color: var(--Dark_Grayish_Blue);
+	line-height: 30px;
+}
+.welcome__img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 /*              Section Welcome            */
@@ -91,7 +109,6 @@ figure{
 	width: 100%;
 }
 .services__title{
-	text-align: justify-all;
 	font-size: 40px;
 	color: var(--Dark_Blue);
 	padding-right: 20px;
@@ -167,7 +184,6 @@ figure{
 	color: var(--Dark_Blue);
 }
 .experiences__card-text{
-	text-align: justify-all;
 	color: var(--Dark_Grayish_Blue);
 }
 .experiences__btn{
@@ -187,7 +203,6 @@ figure{
 	align-items: center;
 }
 .publicidad__text{
-	text-align: justify-all;
 	color: #fff;
 	font-size: 40px;
 	width: 50%;
@@ -254,7 +269,7 @@ footer{
 	font-size: 14px;
 }
 .footer__form-input:focus{
-	border: 2px solid var(--Bright_Red);
+	b order: 2px solid var(--Bright_Red);
 }
 .footer__form-btn{
 	margin-left: 10px;
@@ -271,6 +286,160 @@ footer{
 .attribution a { color: hsl(228, 45%, 44%); }
 
 
+/*             Media Queris         */
+@media screen and (max-width: 830px) {
+	.main-menu{
+		align-self: center;
+		position: absolute;
+		top: 80px;
+		left: 11%;
+
+		background: #fff;
+		box-shadow: 0px 0px 5px 0px #000;
+		border-radius: 7px;
+		transform: 	translateY(-200%);
+		transition: all ease 1s;
+
+		width: 80%;
+		height: 300px;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+	.main-menu--open{
+		transform: 	translateY(0%);
+	}
+	.menu-bar{
+		display: block;
+	}
+	.hero__btn{
+		display: none;
+	}
+	.welcome{
+		flex-direction: column-reverse;
+	}
+	.welcome__box-text,
+	.welcome__box-img{
+		width: 100%;
+	}
+	.services{
+		flex-direction: column;
+	}
+	.services__title{
+		text-align: center;
+		padding-right: 0;
+	}
+	.services__parrafo{
+		padding-right: 0;
+	}
+	.services-points__title{
+		background: var(--Very_Pale_Red);
+		border-radius: 30px;
+		padding: 4px 0px 8px 40px;
+		margin-top: 31px;
+
+		position: relative;
+		right: 30px;
+		z-index: -1;
+
+		font-size: 23px;
+	}
+	.services-points__text{
+		padding-right: 40px;
+	}
+	.services-points__number-point{
+		margin-right: 0;
+	}
+	footer,
+	.footer-social{
+		flex-direction: column-reverse;
+		position: relative;
+	}
+	.footer-social__box-img{
+		margin: auto;
+		margin-bottom: 0px;
+		margin-top: 40px;
+	}
+	.footer-social__box-icons{
+		margin-top: 40px;
+	}
+	.footer-social__icon{
+		width: 35px;
+		margin-left: 20px;
+	}
+	.footer-box-enlaces{
+		margin-top: 40px;
+	}
+	.footer__form-text{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		bottom: 20px;
+		left: 0;
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 580px) {
+	.btn{
+		padding: 12px 24px;
+	}
+	.welcome__title,
+	.services__title{
+		font-size: 30px;
+	}
+	.services-points__title{
+		width: 120%;
+		font-size: 16px;
+	}
+	.services-points__number-point{
+		padding: 5px 15px;
+	}
+	.services-points__text{
+		padding: 0;
+	}
+	.experiences__title{
+		font-size: 30px;
+	}
+	.experiences__card{
+		width: 90%;
+	}
+	.experiences__card-title{
+		font-size: 20px;
+	}
+	.publicidad{
+		flex-direction: column;
+	}
+	.publicidad__text{
+		text-align: center;
+		font-size: 30px;
+		width: 90%;
+	}
+	.footer__form-input{
+		padding: 7px 10px;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.btn{
+		padding: 12px 20px;
+		font-size: 12px;
+	}
+	.services-points__title{
+		width: 150%;
+		font-size: 15px;
+		padding: 4px 0px 6px 30px;
+		margin-top: 33px;
+		right: 20px;
+	}
+	.services-points__text{
+		font-size: 14px;
+		font-weight: bold;
+	}
+}
+/*             Media Queris         */
 
 
 
