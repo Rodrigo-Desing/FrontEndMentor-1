@@ -282,7 +282,11 @@ footer{
 	text-align: center;
 }
 /*              FOOTER            */
-.attribution { font-size: 11px; text-align: center; }
+.attribution { 
+	font-size: 11px; 
+	text-align: center;  
+	background: #fff;
+}
 .attribution a { color: hsl(228, 45%, 44%); }
 
 
